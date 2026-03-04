@@ -1,0 +1,137 @@
+{
+  "data": {
+    "nodeContributors": {
+      "__typename": "NodeContributorConnection",
+      "nodes": [
+        {
+          "__typename": "NodeContributor",
+          "id": "contributor-elena",
+          "title": "Elena Marchetti",
+          "path": "/contributors/elena-marchetti",
+          "body": {
+            "processed": "<p>Elena is Meridian's Editor-in-Chief and the founder of the magazine. A former features editor at Monocle and design correspondent for The Guardian, she launched Meridian in 2019 with the conviction that digital media could be beautiful, substantive, and sustainable through reader support rather than advertising.</p><p>Her writing on architecture, design, and urbanism has appeared in Architectural Digest, Wallpaper*, and The New York Times. She writes the magazine's \"Field Notes\" travel column.</p>",
+            "summary": "Elena is Meridian's Editor-in-Chief and the founder of the magazine. A former features editor at Monocle and design correspondent for The Guardian, she launched Meridian in 2019 with the conviction th"
+          },
+          "contributorRole": "Editor-in-Chief & Founder",
+          "expertiseAreas": [
+            "Architecture",
+            "Design",
+            "Urbanism",
+            "Travel"
+          ],
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&q=80",
+            "alt": "Elena Marchetti - Editor-in-Chief",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeContributor",
+          "id": "contributor-marcus",
+          "title": "Dr. Marcus Reed",
+          "path": "/contributors/marcus-reed",
+          "body": {
+            "processed": "<p>Marcus is a philosopher and cognitive scientist who writes Meridian's \"Making Sense\" column, exploring the philosophical implications of emerging technology. He is a professor at the University of Edinburgh and the author of three books on the philosophy of mind and artificial intelligence.</p><p>His most recent book, <em>Thinking Machines, Thinking About Machines</em> (2024), was shortlisted for the Royal Society Science Book Prize.</p>",
+            "summary": "Marcus is a philosopher and cognitive scientist who writes Meridian's \"Making Sense\" column, exploring the philosophical implications of emerging technology. He is a professor at the University of Edi"
+          },
+          "contributorRole": "Columnist - Making Sense",
+          "expertiseAreas": [
+            "Philosophy of Mind",
+            "AI Ethics",
+            "Cognitive Science"
+          ],
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+            "alt": "Dr. Marcus Reed - Columnist",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeContributor",
+          "id": "contributor-priya",
+          "title": "Priya Ramanathan",
+          "path": "/contributors/priya-ramanathan",
+          "body": {
+            "processed": "<p>Priya is Meridian's technology editor, overseeing all coverage of the tech industry, digital culture, and the internet. Before joining Meridian, she was a senior reporter at The Verge and a contributing writer at Wired.</p><p>Her investigative series on algorithmic bias in hiring software won the 2024 Online Journalism Award for Investigative Reporting.</p>",
+            "summary": "Priya is Meridian's technology editor, overseeing all coverage of the tech industry, digital culture, and the internet. Before joining Meridian, she was a senior reporter at The Verge and a contributi"
+          },
+          "contributorRole": "Technology Editor",
+          "expertiseAreas": [
+            "Technology",
+            "Digital Culture",
+            "Algorithmic Ethics",
+            "Social Media"
+          ],
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+            "alt": "Priya Ramanathan - Technology Editor",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

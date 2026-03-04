@@ -1,0 +1,141 @@
+{
+  "data": {
+    "nodeColumns": {
+      "__typename": "NodeColumnConnection",
+      "nodes": [
+        {
+          "__typename": "NodeColumn",
+          "id": "column-making-sense-7",
+          "title": "Making Sense #7: Can AI Be Creative?",
+          "path": "/columns/making-sense/7-ai-creativity",
+          "body": {
+            "processed": "<p>Every few months, the question resurfaces: can artificial intelligence be truly creative? The latest provocation comes from an AI system that composed a symphony premiered by the London Philharmonic to largely positive reviews -- with audiences unaware of its origin until after the performance.</p><h2>Defining Creativity</h2><p>The problem isn't whether AI can produce creative outputs -- it demonstrably can. The problem is that we've never agreed on what creativity actually means. Is it the novelty of the output? The intentionality behind it? The emotional resonance it produces? The struggle involved in creating it?</p><h2>The Craft Argument</h2><p>Philosopher Alva Noe makes a compelling case that creativity is fundamentally about process, not product. By this definition, AI cannot be creative because it does not experience the world, struggle with problems, or make meaning from lived experience. Its outputs may be novel, but they are not creative.</p><h2>A Third Way</h2><p>Perhaps the most useful framing isn't AI as creative or not-creative, but AI as a creative tool -- the most powerful creative tool humans have ever built. Like the printing press, the camera, or the synthesizer before it, AI expands the vocabulary of human creative expression.</p>",
+            "summary": "Every few months, the question resurfaces: can artificial intelligence be truly creative? The latest provocation comes from an AI system that composed a symphony premiered by the London Philharmonic t"
+          },
+          "columnName": "Making Sense",
+          "columnist": "Dr. Marcus Reed",
+          "installmentNumber": 7,
+          "publishDate": {
+            "timestamp": 1771682400
+          },
+          "readTime": "7 min read",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1507838153414-b4b713384a76?w=800&q=80",
+            "alt": "Piano keys blending into digital abstract art",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1507838153414-b4b713384a76?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1507838153414-b4b713384a76?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1507838153414-b4b713384a76?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "isPremium": true
+        },
+        {
+          "__typename": "NodeColumn",
+          "id": "column-making-sense-6",
+          "title": "Making Sense #6: The Attention Economy Is Over",
+          "path": "/columns/making-sense/6-attention-economy",
+          "body": {
+            "processed": "<p>For two decades, the dominant metaphor for the internet economy has been attention. Tech companies competed to capture as much of your time as possible, monetizing every scroll, click, and glance. But something has shifted.</p><h2>The Attention Recession</h2><p>People are paying attention less, not more. Average time spent on social media platforms has declined for three consecutive years. Ad click-through rates are at all-time lows. Users are deploying ad blockers, screen time limits, and AI summaries to reduce their exposure to attention-harvesting systems.</p><h2>What Comes Next</h2><p>The emerging economy isn't about attention -- it's about trust. The companies and creators thriving now are those who have built genuine trust with their audiences. Trust is harder to earn, harder to scale, and infinitely harder to fake than attention.</p>",
+            "summary": "For two decades, the dominant metaphor for the internet economy has been attention. Tech companies competed to capture as much of your time as possible, monetizing every scroll, click, and glance. But"
+          },
+          "columnName": "Making Sense",
+          "columnist": "Dr. Marcus Reed",
+          "installmentNumber": 6,
+          "publishDate": {
+            "timestamp": 1769263200
+          },
+          "readTime": "6 min read",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80",
+            "alt": "Person looking at multiple screens in dark room",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "isPremium": false
+        },
+        {
+          "__typename": "NodeColumn",
+          "id": "column-field-notes-14",
+          "title": "Field Notes #14: Tokyo After Dark",
+          "path": "/columns/field-notes/14-tokyo-after-dark",
+          "body": {
+            "processed": "<p>It's 2 AM in Shinjuku, and the neon has not dimmed. I'm sitting in a kissaten -- a traditional Japanese coffee house -- that has been serving hand-dripped coffee since 1968. The owner, Tanaka-san, is 82 years old and has no intention of retiring.</p><h2>A City That Never Sleeps Differently</h2><p>Tokyo's nighttime culture is nothing like New York's or London's. There's no performance of excess here. Instead, the city after dark reveals a quiet intensity: salarymen reading novels in 24-hour bookstores, elderly couples walking their dogs through shrine grounds, teenagers practicing dance routines in empty parking structures.</p><h2>The Third Place After Midnight</h2><p>What strikes me most is the abundance of third places that remain open deep into the night. Not bars or clubs, but sento bathhouses, manga cafes, ramen counters, and spaces that defy Western categorization. Tokyo has solved a problem most cities don't even recognize: the need for public solitude.</p>",
+            "summary": "It's 2 AM in Shinjuku, and the neon has not dimmed. I'm sitting in a kissaten -- a traditional Japanese coffee house -- that has been serving hand-dripped coffee since 1968. The owner, Tanaka-san, is "
+          },
+          "columnName": "Field Notes",
+          "columnist": "Elena Marchetti",
+          "installmentNumber": 14,
+          "publishDate": {
+            "timestamp": 1770472800
+          },
+          "readTime": "5 min read",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&q=80",
+            "alt": "Neon-lit Tokyo street at night in Shinjuku",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "isPremium": false
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,580 @@
+{
+  "/homepage": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeHomepage",
+          "id": "homepage",
+          "title": "Welcome to Meridian Magazine",
+          "path": "/homepage",
+          "heroTitle": "Meridian",
+          "heroSubtitle": "Where Ideas Converge",
+          "heroDescription": {
+            "processed": "<p>Meridian is a digital magazine at the intersection of culture, technology, and design. We publish original reporting, essays, and visual storytelling for curious minds who want to understand the forces shaping our world.</p>",
+            "summary": "Meridian is a digital magazine at the intersection of culture, technology, and design. We publish original reporting, essays, and visual storytelling for curious minds who want to understand the force"
+          },
+          "statsItems": [
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-readers",
+              "title": "",
+              "number": "2.1M",
+              "label": "Monthly Readers"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-subscribers",
+              "title": "",
+              "number": "85K+",
+              "label": "Paid Subscribers"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-contributors",
+              "title": "",
+              "number": "120+",
+              "label": "Contributors"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-awards",
+              "title": "",
+              "number": "24",
+              "label": "Journalism Awards"
+            }
+          ],
+          "featuredItemsTitle": "Editor's Picks",
+          "ctaTitle": "Read Without Limits",
+          "ctaDescription": {
+            "processed": "<p>Meridian subscribers get unlimited access to all articles, exclusive longform features, and our weekly digital edition delivered to their inbox.</p>",
+            "summary": "Meridian subscribers get unlimited access to all articles, exclusive longform features, and our weekly digital edition delivered to their inbox."
+          },
+          "ctaPrimary": "Start Your Subscription",
+          "ctaSecondary": "Read Free Articles",
+          "subscriptionPrice": "$12/month or $99/year",
+          "subscriptionFeatures": [
+            "Unlimited access to all articles and archives",
+            "Exclusive longform features and investigations",
+            "Weekly digital edition delivered by email",
+            "Ad-lite reading experience",
+            "Full access to the Meridian app",
+            "Subscriber-only events and panels"
+          ]
+        }
+      }
+    }
+  },
+  "/articles/architecture-of-ai": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeArticle",
+          "id": "article-architecture-ai",
+          "title": "The Architecture of Intelligence: How AI Is Reshaping the Built World",
+          "path": "/articles/architecture-of-ai",
+          "body": {
+            "processed": "<p>Across the globe, a quiet revolution is unfolding in architecture studios and construction sites. Artificial intelligence is not just helping architects design buildings -- it is fundamentally changing what buildings can be.</p><h2>Generative Design</h2><p>At the offices of Zaha Hadid Architects in London, computational designers are using AI systems to generate thousands of structural variations for a single building, optimizing for factors no human could balance simultaneously: structural integrity, energy efficiency, material costs, acoustic properties, and natural light distribution.</p><p>\"We're not replacing the architect's vision,\" says Patrik Schumacher, principal at ZHA. \"We're giving them a thousand starting points instead of one. The creative judgment of which path to follow remains deeply human.\"</p><h2>Smart Materials</h2><p>AI is also accelerating the development of new building materials. At MIT's Materials Lab, machine learning models have identified composite materials that are 40% lighter than steel while matching its structural performance. These materials could dramatically reduce the carbon footprint of construction.</p><h2>The Human Element</h2><p>Despite the technological advances, the most successful AI-assisted projects share a common trait: they use technology to amplify human creativity rather than replace it. The buildings that result are not cold or algorithmic -- they are more responsive, more sustainable, and more attuned to the humans who inhabit them.</p>",
+            "summary": "Across the globe, a quiet revolution is unfolding in architecture studios and construction sites. Artificial intelligence is not just helping architects design buildings -- it is fundamentally changin"
+          },
+          "articleSection": [
+            {
+              "id": "design",
+              "name": "design"
+            },
+            {
+              "id": "technology",
+              "name": "technology"
+            }
+          ],
+          "authorName": "Elena Marchetti",
+          "publishDate": {
+            "timestamp": 1772287200
+          },
+          "readTime": "12 min read",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800&q=80",
+            "alt": "Modern architectural structure with geometric patterns",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "isPremium": false,
+          "featured": true
+        }
+      }
+    }
+  },
+  "/articles/ocean-farms-feeding-the-future": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeArticle",
+          "id": "article-ocean-farms",
+          "title": "Ocean Farms: How Seaweed Agriculture Could Feed the Future",
+          "path": "/articles/ocean-farms-feeding-the-future",
+          "body": {
+            "processed": "<p>Off the coast of Maine, rows of kelp stretch beneath the surface like underwater cornfields. These ocean farms represent one of the most promising -- and least discussed -- solutions to global food insecurity.</p><h2>The Case for Seaweed</h2><p>Seaweed requires no freshwater, no fertilizer, no arable land, and no deforestation. It grows faster than any terrestrial crop, absorbs carbon dioxide, and provides habitat for marine life. By every environmental metric, it is the ideal crop for a warming planet.</p><p>\"We're farming the ocean the way we should have been for decades,\" says Dr. Bren Smith, founder of GreenWave, the nonprofit organization that has trained over 10,000 ocean farmers worldwide. \"This isn't aquaculture 1.0 -- it's regenerative ocean farming that actually improves the ecosystem.\"</p><h2>Beyond Sushi</h2><p>The challenge is no longer growing seaweed -- it's convincing Western consumers to eat it. Companies like Akua and Atlantic Sea Farms are creating products that integrate seaweed into familiar formats: pasta, burgers, snack bars, and seasonings.</p><h2>Scale and Economics</h2><p>Current global seaweed production is valued at $16 billion annually, but analysts project the market could reach $85 billion by 2035 as processing technology improves and consumer acceptance grows.</p>",
+            "summary": "Off the coast of Maine, rows of kelp stretch beneath the surface like underwater cornfields. These ocean farms represent one of the most promising -- and least discussed -- solutions to global food in"
+          },
+          "articleSection": [
+            {
+              "id": "science",
+              "name": "science"
+            }
+          ],
+          "authorName": "James Whitfield",
+          "publishDate": {
+            "timestamp": 1771941600
+          },
+          "readTime": "10 min read",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=800&q=80",
+            "alt": "Underwater kelp forest in ocean sunlight",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "isPremium": true,
+          "featured": true
+        }
+      }
+    }
+  },
+  "/articles/the-great-social-media-exodus": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeArticle",
+          "id": "article-social-media-exodus",
+          "title": "The Great Social Media Exodus: Where Are People Going?",
+          "path": "/articles/the-great-social-media-exodus",
+          "body": {
+            "processed": "<p>For the first time in social media history, the major platforms are experiencing sustained user decline. But the story isn't about people leaving the internet -- it's about where they're going instead.</p><h2>The Shift to Smaller Communities</h2><p>Users aren't abandoning social connection; they're migrating to smaller, more intentional spaces. Discord servers, group chats, private newsletters, and niche forums are experiencing explosive growth as people seek meaningful interaction over algorithmic engagement.</p><h2>The Numbers</h2><p>Recent data paints a clear picture:</p><ul><li>Facebook daily active users down 15% year-over-year</li><li>X (formerly Twitter) has lost 30% of its daily users since 2023</li><li>Discord now has 200 million monthly active users, up from 150 million last year</li><li>Substack communities have grown 400% since 2024</li></ul><h2>What It Means</h2><p>Media theorist Ethan Zuckerman calls this the \"rewilding of the internet\" -- a return to the internet's original promise of diverse, decentralized communities. The mass social media era, he argues, was always an aberration.</p>",
+            "summary": "For the first time in social media history, the major platforms are experiencing sustained user decline. But the story isn't about people leaving the internet -- it's about where they're going instead"
+          },
+          "articleSection": [
+            {
+              "id": "culture",
+              "name": "culture"
+            },
+            {
+              "id": "technology",
+              "name": "technology"
+            }
+          ],
+          "authorName": "Priya Ramanathan",
+          "publishDate": {
+            "timestamp": 1771336800
+          },
+          "readTime": "8 min read",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80",
+            "alt": "Social media apps on smartphone screen",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "isPremium": false,
+          "featured": false
+        }
+      }
+    }
+  },
+  "/columns/making-sense/7-ai-creativity": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeColumn",
+          "id": "column-making-sense-7",
+          "title": "Making Sense #7: Can AI Be Creative?",
+          "path": "/columns/making-sense/7-ai-creativity",
+          "body": {
+            "processed": "<p>Every few months, the question resurfaces: can artificial intelligence be truly creative? The latest provocation comes from an AI system that composed a symphony premiered by the London Philharmonic to largely positive reviews -- with audiences unaware of its origin until after the performance.</p><h2>Defining Creativity</h2><p>The problem isn't whether AI can produce creative outputs -- it demonstrably can. The problem is that we've never agreed on what creativity actually means. Is it the novelty of the output? The intentionality behind it? The emotional resonance it produces? The struggle involved in creating it?</p><h2>The Craft Argument</h2><p>Philosopher Alva Noe makes a compelling case that creativity is fundamentally about process, not product. By this definition, AI cannot be creative because it does not experience the world, struggle with problems, or make meaning from lived experience. Its outputs may be novel, but they are not creative.</p><h2>A Third Way</h2><p>Perhaps the most useful framing isn't AI as creative or not-creative, but AI as a creative tool -- the most powerful creative tool humans have ever built. Like the printing press, the camera, or the synthesizer before it, AI expands the vocabulary of human creative expression.</p>",
+            "summary": "Every few months, the question resurfaces: can artificial intelligence be truly creative? The latest provocation comes from an AI system that composed a symphony premiered by the London Philharmonic t"
+          },
+          "columnName": "Making Sense",
+          "columnist": "Dr. Marcus Reed",
+          "installmentNumber": 7,
+          "publishDate": {
+            "timestamp": 1771682400
+          },
+          "readTime": "7 min read",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1507838153414-b4b713384a76?w=800&q=80",
+            "alt": "Piano keys blending into digital abstract art",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1507838153414-b4b713384a76?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1507838153414-b4b713384a76?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1507838153414-b4b713384a76?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "isPremium": true
+        }
+      }
+    }
+  },
+  "/columns/making-sense/6-attention-economy": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeColumn",
+          "id": "column-making-sense-6",
+          "title": "Making Sense #6: The Attention Economy Is Over",
+          "path": "/columns/making-sense/6-attention-economy",
+          "body": {
+            "processed": "<p>For two decades, the dominant metaphor for the internet economy has been attention. Tech companies competed to capture as much of your time as possible, monetizing every scroll, click, and glance. But something has shifted.</p><h2>The Attention Recession</h2><p>People are paying attention less, not more. Average time spent on social media platforms has declined for three consecutive years. Ad click-through rates are at all-time lows. Users are deploying ad blockers, screen time limits, and AI summaries to reduce their exposure to attention-harvesting systems.</p><h2>What Comes Next</h2><p>The emerging economy isn't about attention -- it's about trust. The companies and creators thriving now are those who have built genuine trust with their audiences. Trust is harder to earn, harder to scale, and infinitely harder to fake than attention.</p>",
+            "summary": "For two decades, the dominant metaphor for the internet economy has been attention. Tech companies competed to capture as much of your time as possible, monetizing every scroll, click, and glance. But"
+          },
+          "columnName": "Making Sense",
+          "columnist": "Dr. Marcus Reed",
+          "installmentNumber": 6,
+          "publishDate": {
+            "timestamp": 1769263200
+          },
+          "readTime": "6 min read",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80",
+            "alt": "Person looking at multiple screens in dark room",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "isPremium": false
+        }
+      }
+    }
+  },
+  "/columns/field-notes/14-tokyo-after-dark": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeColumn",
+          "id": "column-field-notes-14",
+          "title": "Field Notes #14: Tokyo After Dark",
+          "path": "/columns/field-notes/14-tokyo-after-dark",
+          "body": {
+            "processed": "<p>It's 2 AM in Shinjuku, and the neon has not dimmed. I'm sitting in a kissaten -- a traditional Japanese coffee house -- that has been serving hand-dripped coffee since 1968. The owner, Tanaka-san, is 82 years old and has no intention of retiring.</p><h2>A City That Never Sleeps Differently</h2><p>Tokyo's nighttime culture is nothing like New York's or London's. There's no performance of excess here. Instead, the city after dark reveals a quiet intensity: salarymen reading novels in 24-hour bookstores, elderly couples walking their dogs through shrine grounds, teenagers practicing dance routines in empty parking structures.</p><h2>The Third Place After Midnight</h2><p>What strikes me most is the abundance of third places that remain open deep into the night. Not bars or clubs, but sento bathhouses, manga cafes, ramen counters, and spaces that defy Western categorization. Tokyo has solved a problem most cities don't even recognize: the need for public solitude.</p>",
+            "summary": "It's 2 AM in Shinjuku, and the neon has not dimmed. I'm sitting in a kissaten -- a traditional Japanese coffee house -- that has been serving hand-dripped coffee since 1968. The owner, Tanaka-san, is "
+          },
+          "columnName": "Field Notes",
+          "columnist": "Elena Marchetti",
+          "installmentNumber": 14,
+          "publishDate": {
+            "timestamp": 1770472800
+          },
+          "readTime": "5 min read",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&q=80",
+            "alt": "Neon-lit Tokyo street at night in Shinjuku",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "isPremium": false
+        }
+      }
+    }
+  },
+  "/contributors/elena-marchetti": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeContributor",
+          "id": "contributor-elena",
+          "title": "Elena Marchetti",
+          "path": "/contributors/elena-marchetti",
+          "body": {
+            "processed": "<p>Elena is Meridian's Editor-in-Chief and the founder of the magazine. A former features editor at Monocle and design correspondent for The Guardian, she launched Meridian in 2019 with the conviction that digital media could be beautiful, substantive, and sustainable through reader support rather than advertising.</p><p>Her writing on architecture, design, and urbanism has appeared in Architectural Digest, Wallpaper*, and The New York Times. She writes the magazine's \"Field Notes\" travel column.</p>",
+            "summary": "Elena is Meridian's Editor-in-Chief and the founder of the magazine. A former features editor at Monocle and design correspondent for The Guardian, she launched Meridian in 2019 with the conviction th"
+          },
+          "contributorRole": "Editor-in-Chief & Founder",
+          "expertiseAreas": [
+            "Architecture",
+            "Design",
+            "Urbanism",
+            "Travel"
+          ],
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&q=80",
+            "alt": "Elena Marchetti - Editor-in-Chief",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "/contributors/marcus-reed": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeContributor",
+          "id": "contributor-marcus",
+          "title": "Dr. Marcus Reed",
+          "path": "/contributors/marcus-reed",
+          "body": {
+            "processed": "<p>Marcus is a philosopher and cognitive scientist who writes Meridian's \"Making Sense\" column, exploring the philosophical implications of emerging technology. He is a professor at the University of Edinburgh and the author of three books on the philosophy of mind and artificial intelligence.</p><p>His most recent book, <em>Thinking Machines, Thinking About Machines</em> (2024), was shortlisted for the Royal Society Science Book Prize.</p>",
+            "summary": "Marcus is a philosopher and cognitive scientist who writes Meridian's \"Making Sense\" column, exploring the philosophical implications of emerging technology. He is a professor at the University of Edi"
+          },
+          "contributorRole": "Columnist - Making Sense",
+          "expertiseAreas": [
+            "Philosophy of Mind",
+            "AI Ethics",
+            "Cognitive Science"
+          ],
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+            "alt": "Dr. Marcus Reed - Columnist",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "/contributors/priya-ramanathan": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeContributor",
+          "id": "contributor-priya",
+          "title": "Priya Ramanathan",
+          "path": "/contributors/priya-ramanathan",
+          "body": {
+            "processed": "<p>Priya is Meridian's technology editor, overseeing all coverage of the tech industry, digital culture, and the internet. Before joining Meridian, she was a senior reporter at The Verge and a contributing writer at Wired.</p><p>Her investigative series on algorithmic bias in hiring software won the 2024 Online Journalism Award for Investigative Reporting.</p>",
+            "summary": "Priya is Meridian's technology editor, overseeing all coverage of the tech industry, digital culture, and the internet. Before joining Meridian, she was a senior reporter at The Verge and a contributi"
+          },
+          "contributorRole": "Technology Editor",
+          "expertiseAreas": [
+            "Technology",
+            "Digital Culture",
+            "Algorithmic Ethics",
+            "Social Media"
+          ],
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+            "alt": "Priya Ramanathan - Technology Editor",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "/about": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodePage",
+          "id": "page-about",
+          "title": "About Meridian",
+          "path": "/about",
+          "body": {
+            "processed": "<p>Meridian is an independent digital magazine founded in 2019. We publish original journalism, essays, criticism, and visual storytelling at the intersection of culture, technology, design, and science.</p><h2>Our Model</h2><p>Meridian is primarily funded by reader subscriptions, not advertising. This means our editorial decisions are driven by quality and relevance, not clicks and engagement metrics. We believe great journalism deserves a sustainable business model, and our readers agree.</p><h2>Editorial Standards</h2><p>Every piece we publish undergoes rigorous fact-checking and editorial review. We clearly label opinion content, disclose conflicts of interest, and issue corrections promptly and transparently.</p><h2>Recognition</h2><ul><li>National Magazine Award - Digital Innovation (2025)</li><li>Webby Award - Best Editorial Experience (2024, 2025)</li><li>Society of Publication Designers - Magazine of the Year Finalist</li></ul>",
+            "summary": "Meridian is an independent digital magazine founded in 2019. We publish original journalism, essays, criticism, and visual storytelling at the intersection of culture, technology, design, and science."
+          }
+        }
+      }
+    }
+  },
+  "/subscribe": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodePage",
+          "id": "page-subscribe",
+          "title": "Subscribe to Meridian",
+          "path": "/subscribe",
+          "body": {
+            "processed": "<h2>Support Independent Journalism</h2><p>Your subscription funds the reporting, writing, and design that makes Meridian possible. Every subscriber directly supports our team of writers, editors, and designers.</p><h2>Subscriber Benefits</h2><ul><li><strong>Unlimited Access</strong> - Read every article, column, and feature without limits</li><li><strong>Weekly Edition</strong> - A curated digital edition delivered to your inbox every Friday</li><li><strong>Archives</strong> - Full access to our complete archive since 2019</li><li><strong>Ad-Lite Experience</strong> - Significantly reduced advertising across the site</li><li><strong>Events</strong> - Invitations to subscriber-only panels, readings, and launch events</li></ul><h2>Pricing</h2><p>Monthly: $12/month<br/>Annual: $99/year (save $45)</p><p>Student and group discounts available. All subscriptions include a 30-day money-back guarantee.</p>",
+            "summary": "Support Independent JournalismYour subscription funds the reporting, writing, and design that makes Meridian possible. Every subscriber directly supports our team of writers, editors, and designers.Su"
+          }
+        }
+      }
+    }
+  }
+}

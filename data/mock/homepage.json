@@ -1,0 +1,68 @@
+{
+  "data": {
+    "nodeHomepages": {
+      "__typename": "NodeHomepageConnection",
+      "nodes": [
+        {
+          "__typename": "NodeHomepage",
+          "id": "homepage",
+          "title": "Welcome to Meridian Magazine",
+          "path": "/homepage",
+          "heroTitle": "Meridian",
+          "heroSubtitle": "Where Ideas Converge",
+          "heroDescription": {
+            "processed": "<p>Meridian is a digital magazine at the intersection of culture, technology, and design. We publish original reporting, essays, and visual storytelling for curious minds who want to understand the forces shaping our world.</p>",
+            "summary": "Meridian is a digital magazine at the intersection of culture, technology, and design. We publish original reporting, essays, and visual storytelling for curious minds who want to understand the force"
+          },
+          "statsItems": [
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-readers",
+              "title": "",
+              "number": "2.1M",
+              "label": "Monthly Readers"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-subscribers",
+              "title": "",
+              "number": "85K+",
+              "label": "Paid Subscribers"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-contributors",
+              "title": "",
+              "number": "120+",
+              "label": "Contributors"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-awards",
+              "title": "",
+              "number": "24",
+              "label": "Journalism Awards"
+            }
+          ],
+          "featuredItemsTitle": "Editor's Picks",
+          "ctaTitle": "Read Without Limits",
+          "ctaDescription": {
+            "processed": "<p>Meridian subscribers get unlimited access to all articles, exclusive longform features, and our weekly digital edition delivered to their inbox.</p>",
+            "summary": "Meridian subscribers get unlimited access to all articles, exclusive longform features, and our weekly digital edition delivered to their inbox."
+          },
+          "ctaPrimary": "Start Your Subscription",
+          "ctaSecondary": "Read Free Articles",
+          "subscriptionPrice": "$12/month or $99/year",
+          "subscriptionFeatures": [
+            "Unlimited access to all articles and archives",
+            "Exclusive longform features and investigations",
+            "Weekly digital edition delivered by email",
+            "Ad-lite reading experience",
+            "Full access to the Meridian app",
+            "Subscriber-only events and panels"
+          ]
+        }
+      ]
+    }
+  }
+}
