@@ -543,7 +543,7 @@
       }
     }
   },
-  "/about": {
+  "/news": {
     "data": {
       "route": {
         "__typename": "RouteInternal",
@@ -551,7 +551,7 @@
           "__typename": "NodePage",
           "id": "page-about",
           "title": "About Meridian",
-          "path": "/about",
+          "path": "/news",
           "body": {
             "processed": "<p>Meridian is an independent digital magazine founded in 2019. We publish original journalism, essays, criticism, and visual storytelling at the intersection of culture, technology, design, and science.</p><h2>Our Model</h2><p>Meridian is primarily funded by reader subscriptions, not advertising. This means our editorial decisions are driven by quality and relevance, not clicks and engagement metrics. We believe great journalism deserves a sustainable business model, and our readers agree.</p><h2>Editorial Standards</h2><p>Every piece we publish undergoes rigorous fact-checking and editorial review. We clearly label opinion content, disclose conflicts of interest, and issue corrections promptly and transparently.</p><h2>Recognition</h2><ul><li>National Magazine Award - Digital Innovation (2025)</li><li>Webby Award - Best Editorial Experience (2024, 2025)</li><li>Society of Publication Designers - Magazine of the Year Finalist</li></ul>",
             "summary": "Meridian is an independent digital magazine founded in 2019. We publish original journalism, essays, criticism, and visual storytelling at the intersection of culture, technology, design, and science."

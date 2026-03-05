@@ -79,7 +79,7 @@ export default async function HomePage() {
             and insights you won&apos;t find anywhere else.
           </p>
           <Link
-            href="/pricing"
+            href="/news"
             className="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-colors"
           >
             <Sparkles className="h-5 w-5" />

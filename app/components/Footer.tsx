@@ -28,7 +28,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/pricing" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/news" className="text-gray-400 hover:text-white transition-colors">
                   Pricing
                 </Link>
               </li>
@@ -47,7 +47,7 @@ export function Footer() {
               Get unlimited access to all premium content.
             </p>
             <Link
-              href="/pricing"
+              href="/news"
               className="inline-block bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-lg font-medium transition-colors"
             >
               View Plans

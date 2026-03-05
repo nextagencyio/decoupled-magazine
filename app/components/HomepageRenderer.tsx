@@ -23,8 +23,8 @@ export default function HomepageRenderer({ homepageContent }: HomepageRendererPr
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between gap-4 text-sm text-primary-500">
           <p>&copy; {new Date().getFullYear()} Studio Desk. All rights reserved.</p>
           <div className="flex gap-6">
-            <Link href="/about" className="hover:text-primary-900 transition-colors">About</Link>
-            <Link href="/services" className="hover:text-primary-900 transition-colors">Services</Link>
+            <Link href="/news" className="hover:text-primary-900 transition-colors">About</Link>
+            <Link href="/news" className="hover:text-primary-900 transition-colors">Services</Link>
             <Link href="/contact" className="hover:text-primary-900 transition-colors">Contact</Link>
           </div>
         </div>
