@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { handleMockQuery, isDemoMode } from '@/lib/demo-mode'
 
 const DRUPAL_BASE_URL = process.env.DRUPAL_BASE_URL || ''
 const DRUPAL_CLIENT_ID = process.env.DRUPAL_CLIENT_ID || ''
@@ -48,6 +49,12 @@ async function getAccessToken(): Promise<string> {
 
 export async function POST(request: NextRequest) {
   try {
+    const rawBody = await request.text()
+
+    if (isDemoMode()) {
+      return NextResponse.json(handleMockQuery(rawBody))
+    }
+
     if (!DRUPAL_BASE_URL || !DRUPAL_CLIENT_ID || !DRUPAL_CLIENT_SECRET) {
       return NextResponse.json(
         { errors: [{ message: 'Drupal connection not configured' }] },
@@ -56,7 +63,7 @@ export async function POST(request: NextRequest) {
     }
 
     const token = await getAccessToken()
-    const body = await request.json()
+    const body = JSON.parse(rawBody)
 
     const graphqlUrl = `${DRUPAL_BASE_URL}/graphql`
 

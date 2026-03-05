@@ -70,5 +70,37 @@ export function handleMockQuery(body: string): any {
 // Auto-generated helper exports for custom app files
 
 export function getMockPosts(): any[] {
-  return []
+  const nodes = articlesData?.data?.nodeArticles?.nodes || []
+
+  return nodes.map((node: any) => {
+    const slug = node.path?.replace(/^\/articles\//, '') || node.id
+    const publishedAt = node.created?.time
+      || (node.publishDate?.timestamp
+        ? new Date(node.publishDate.timestamp * 1000).toISOString()
+        : new Date().toISOString())
+
+    return {
+      id: node.id,
+      title: node.title,
+      slug,
+      excerpt: node.body?.summary || '',
+      body: node.body?.processed || '',
+      publishedAt,
+      readTime: node.readTime || '5 min read',
+      featured: node.featured ?? false,
+      image: node.image ? {
+        url: node.image.url,
+        alt: node.image.alt || node.title,
+        width: node.image.width || 1200,
+        height: node.image.height || 630,
+      } : undefined,
+      author: {
+        name: node.authorName || 'Meridian Editorial',
+        avatar: node.authorAvatar ? {
+          url: node.authorAvatar.url,
+          alt: node.authorAvatar.alt || node.authorName,
+        } : undefined,
+      },
+    }
+  })
 }
