@@ -87,6 +87,19 @@ export default async function HomePage() {
           </Link>
         </div>
 
+        <section className="mb-12 grid md:grid-cols-3 gap-4">
+          {[
+            { title: 'Deep Analysis', text: 'Long-form reporting that goes beyond headlines and hot takes.' },
+            { title: 'Expert Voices', text: 'Columns from practitioners, researchers, and operators in the field.' },
+            { title: 'Weekly Edition', text: 'A curated weekly digest with the most important stories and context.' },
+          ].map((item) => (
+            <div key={item.title} className="bg-gray-800/40 border border-gray-700 rounded-xl p-5">
+              <h3 className="text-white font-semibold mb-2">{item.title}</h3>
+              <p className="text-gray-400 text-sm">{item.text}</p>
+            </div>
+          ))}
+        </section>
+
         {error && (
           <div className="mb-8 p-4 bg-red-500/10 border border-red-500/30 rounded-lg">
             <p className="text-red-400">Failed to load posts: {error}</p>
