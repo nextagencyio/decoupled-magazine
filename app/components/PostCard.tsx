@@ -15,6 +15,8 @@ export function PostCard({ post, featured = false }: PostCardProps) {
     day: 'numeric',
   })
 
+  const isPremium = (post as any).isPremium ?? (post as any).subscriptionTier === 'premium'
+
   if (featured) {
     return (
       <Link
@@ -29,6 +31,7 @@ export function PostCard({ post, featured = false }: PostCardProps) {
                 alt={post.image.alt}
                 fill
                 className="object-cover"
+                unoptimized={post.image.url.includes('unsplash.com')}
               />
             ) : (
               <div className="absolute inset-0 bg-gradient-to-br from-primary-600/30 via-purple-600/20 to-gray-800 flex items-center justify-center">
@@ -48,10 +51,12 @@ export function PostCard({ post, featured = false }: PostCardProps) {
                 <Clock className="h-4 w-4" />
                 {post.readTime}
               </span>
-              <span className="ml-auto flex items-center gap-1 text-primary-400">
-                <Lock className="h-4 w-4" />
-                Premium
-              </span>
+              {isPremium && (
+                <span className="ml-auto flex items-center gap-1 text-primary-400">
+                  <Lock className="h-4 w-4" />
+                  Premium
+                </span>
+              )}
             </div>
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 group-hover:text-primary-400 transition-colors">
               {post.title}
@@ -68,6 +73,7 @@ export function PostCard({ post, featured = false }: PostCardProps) {
                     width={40}
                     height={40}
                     className="rounded-full"
+                    unoptimized={post.author.avatar.url.includes('unsplash.com')}
                   />
                 )}
                 <span className="text-gray-300">{post.author.name}</span>
@@ -90,7 +96,8 @@ export function PostCard({ post, featured = false }: PostCardProps) {
             src={post.image.url}
             alt={post.image.alt}
             fill
-            className="object-cover"
+            className="object-cover group-hover:scale-105 transition-transform duration-500"
+            unoptimized={post.image.url.includes('unsplash.com')}
           />
         ) : (
           <div className="absolute inset-0 bg-gradient-to-br from-primary-600/20 via-purple-600/10 to-gray-800 flex items-center justify-center">
@@ -99,6 +106,11 @@ export function PostCard({ post, featured = false }: PostCardProps) {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
               </svg>
             </div>
+          </div>
+        )}
+        {isPremium && (
+          <div className="absolute top-3 right-3 bg-primary-500/90 backdrop-blur-sm text-white text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded">
+            Premium
           </div>
         )}
       </div>
@@ -119,12 +131,20 @@ export function PostCard({ post, featured = false }: PostCardProps) {
         </p>
         <div className="flex items-center justify-between">
           {post.author && (
-            <span className="text-sm text-gray-500">{post.author.name}</span>
+            <div className="flex items-center gap-2">
+              {post.author.avatar && (
+                <Image
+                  src={post.author.avatar.url}
+                  alt={post.author.name}
+                  width={24}
+                  height={24}
+                  className="rounded-full"
+                  unoptimized={post.author.avatar.url.includes('unsplash.com')}
+                />
+              )}
+              <span className="text-sm text-gray-500">{post.author.name}</span>
+            </div>
           )}
-          <span className="flex items-center gap-1 text-sm text-primary-400">
-            <Lock className="h-3 w-3" />
-            Premium
-          </span>
         </div>
       </div>
     </Link>

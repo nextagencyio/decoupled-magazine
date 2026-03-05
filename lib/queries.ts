@@ -131,7 +131,7 @@ export function transformPost(node: any): import('./types').Post | null {
       height: node.image.height || 630,
     } : undefined,
     author: {
-      name: node.authorName || 'The Insider Team',
+      name: node.authorName || 'Meridian Editorial',
       avatar: node.authorAvatar ? {
         url: node.authorAvatar.url,
         alt: node.authorAvatar.alt || node.authorName,

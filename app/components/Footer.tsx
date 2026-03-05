@@ -10,7 +10,7 @@ export function Footer() {
           <div className="md:col-span-2">
             <Link href="/" className="flex items-center gap-2 text-white font-bold text-xl mb-4">
               <Newspaper className="h-6 w-6 text-primary-500" />
-              <span>The Insider</span>
+              <span>Meridian</span>
             </Link>
             <p className="text-gray-400 max-w-md">
               Premium insights and analysis delivered to your inbox. Subscribe for exclusive access
@@ -57,7 +57,7 @@ export function Footer() {
 
         <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-sm">
-            &copy; {new Date().getFullYear()} The Insider. All rights reserved.
+            &copy; {new Date().getFullYear()} Meridian. All rights reserved.
           </p>
           <p className="text-gray-500 text-sm">
             Powered by{' '}

@@ -88,6 +88,7 @@ export function getMockPosts(): any[] {
       publishedAt,
       readTime: node.readTime || '5 min read',
       featured: node.featured ?? false,
+      isPremium: node.isPremium ?? false,
       image: node.image ? {
         url: node.image.url,
         alt: node.image.alt || node.title,

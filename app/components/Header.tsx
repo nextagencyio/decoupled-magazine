@@ -7,9 +7,9 @@ import clsx from 'clsx'
 import { Menu, X } from 'lucide-react'
 
 const navigationItems = [
-  { name: 'Work', href: '/news' },
-  { name: 'Services', href: '/news' },
-  { name: 'About', href: '/news' },
+  { name: 'Culture', href: '/news' },
+  { name: 'Technology', href: '/news' },
+  { name: 'Science', href: '/news' },
 ]
 
 export default function Header() {
@@ -27,18 +27,18 @@ export default function Header() {
   const activeTab = getActiveTab()
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-primary-950/80 backdrop-blur-md border-b border-gray-800/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <Link href="/" className="font-display text-lg font-bold tracking-tight text-primary-900 hover:text-accent-500 transition-colors duration-200">Studio Desk</Link>
+          <Link href="/" className="font-display text-lg font-bold tracking-tight text-white hover:text-primary-400 transition-colors duration-200">Meridian</Link>
           <nav className="hidden md:flex items-center space-x-8">
             {navigationItems.map((item) => (
-              <Link key={item.name} href={item.href} className={clsx('text-sm transition-colors duration-200', activeTab === item.name ? 'text-accent-500' : 'text-primary-500 hover:text-primary-900')}>
+              <Link key={item.name} href={item.href} className={clsx('text-sm transition-colors duration-200', activeTab === item.name ? 'text-primary-400' : 'text-gray-400 hover:text-white')}>
                 {item.name}
               </Link>
             ))}
           </nav>
-          <button type="button" className="md:hidden inline-flex items-center justify-center p-1 text-primary-500 hover:text-primary-900 transition-colors" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+          <button type="button" className="md:hidden inline-flex items-center justify-center p-1 text-gray-400 hover:text-white transition-colors" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             <span className="sr-only">Open menu</span>
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
@@ -48,7 +48,7 @@ export default function Header() {
           <div className="md:hidden pb-4">
             <nav className="flex flex-col space-y-3">
               {navigationItems.map((item) => (
-                <Link key={item.name} href={item.href} onClick={() => setMobileMenuOpen(false)} className={clsx('text-sm transition-colors duration-200', activeTab === item.name ? 'text-accent-500' : 'text-primary-500 hover:text-primary-900')}>
+                <Link key={item.name} href={item.href} onClick={() => setMobileMenuOpen(false)} className={clsx('text-sm transition-colors duration-200', activeTab === item.name ? 'text-primary-400' : 'text-gray-400 hover:text-white')}>
                   {item.name}
                 </Link>
               ))}
