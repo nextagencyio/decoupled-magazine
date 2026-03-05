@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import clsx from 'clsx'
@@ -15,6 +15,19 @@ const navigationItems = [
 export default function Header() {
   const pathname = usePathname()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [bannerHeight, setBannerHeight] = useState(0)
+
+  useEffect(() => {
+    const banner = document.querySelector('[class*="bg-amber-500"]') as HTMLElement | null
+    if (banner) {
+      const update = () => setBannerHeight(banner.offsetHeight)
+      update()
+      const observer = new MutationObserver(update)
+      observer.observe(banner, { attributes: true, childList: true, subtree: true })
+      window.addEventListener('resize', update)
+      return () => { observer.disconnect(); window.removeEventListener('resize', update) }
+    }
+  }, [])
 
   const getActiveTab = () => {
     if (pathname === '/') return 'Home'
@@ -27,7 +40,7 @@ export default function Header() {
   const activeTab = getActiveTab()
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-primary-950/80 backdrop-blur-md border-b border-gray-800/50">
+    <header className="fixed left-0 right-0 z-50 bg-primary-950/80 backdrop-blur-md border-b border-gray-800/50" style={{ top: bannerHeight }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <Link href="/" className="font-display text-lg font-bold tracking-tight text-white hover:text-primary-400 transition-colors duration-200">Meridian</Link>
