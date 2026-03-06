@@ -19,28 +19,28 @@
               "__typename": "ParagraphStatItem",
               "id": "stat-readers",
               "title": "",
-              "number": "2.1M",
+              "number": "2.1M", "value": "2.1M",
               "label": "Monthly Readers"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-subscribers",
               "title": "",
-              "number": "85K+",
+              "number": "85K+", "value": "85K+",
               "label": "Paid Subscribers"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-contributors",
               "title": "",
-              "number": "120+",
+              "number": "120+", "value": "120+",
               "label": "Contributors"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-awards",
               "title": "",
-              "number": "24",
+              "number": "24", "value": "24",
               "label": "Journalism Awards"
             }
           ],
