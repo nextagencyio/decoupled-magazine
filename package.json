@@ -15,7 +15,8 @@
     "setup": "tsx scripts/setup.ts",
     "setup-content": "npx decoupled-cli@latest content import --file data/magazine-content.json",
     "setup-content:preview": "npx decoupled-cli@latest content import --file data/subscription-content.json --preview",
-    "stripe:listen": "stripe listen --forward-to localhost:3000/api/webhooks/stripe"
+    "stripe:listen": "stripe listen --forward-to localhost:3000/api/webhooks/stripe",
+    "build:cloudflare": "opennextjs-cloudflare build"
   },
   "dependencies": {
     "@apollo/client": "^3.13.9",
@@ -30,6 +31,7 @@
     "stripe": "^20.3.0"
   },
   "devDependencies": {
+    "@opennextjs/cloudflare": "^1.17.1",
     "@tailwindcss/typography": "^0.5.16",
     "@types/node": "^22",
     "@types/react": "^19.1.10",
@@ -41,6 +43,7 @@
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.17",
     "tsx": "^4.20.4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.71.0"
   }
 }

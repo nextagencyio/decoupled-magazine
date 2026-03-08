@@ -1,5 +1,6 @@
 import { ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client'
 import { setContext } from '@apollo/client/link/context'
+import { isDemoMode, handleMockQuery } from './demo-mode'
 
 function getServerBaseUrl(): string {
   const explicitSiteUrl = process.env.NEXT_PUBLIC_SITE_URL
@@ -22,6 +23,25 @@ function getGraphqlUri(): string {
     return '/api/graphql'
   }
   return `${getServerBaseUrl()}/api/graphql`
+}
+
+async function fetchGraphql(
+  uri: RequestInfo | URL,
+  options?: RequestInit,
+  withTags = false
+): Promise<Response> {
+  if (typeof window === 'undefined' && isDemoMode()) {
+    const body = typeof options?.body === 'string' ? options.body : '{}'
+    return new Response(JSON.stringify(handleMockQuery(body)), {
+      headers: { 'Content-Type': 'application/json' },
+    })
+  }
+
+  if (withTags) {
+    return fetch(uri, { ...options, next: { tags: ['drupal'] } } as RequestInit)
+  }
+
+  return fetch(uri, options)
 }
 
 let browserClient: ApolloClient<any> | null = null
@@ -57,6 +77,7 @@ export function getServerApolloClient(requestHeaders: Headers): ApolloClient<any
 
 const httpLink = createHttpLink({
   uri: getGraphqlUri(),
+  fetch: (uri: RequestInfo | URL, options?: RequestInit) => fetchGraphql(uri, options),
 })
 
 const authLink = setContext((_, { headers }) => {
