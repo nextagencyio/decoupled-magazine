@@ -10,6 +10,8 @@ import Link from 'next/link'
 import { Clock, ArrowRight, Lock, Unlock } from 'lucide-react'
 import { isDemoMode, getMockPosts } from '@/lib/demo-mode'
 
+export const dynamic = 'force-dynamic'
+
 // Check which env vars are missing
 function getMissingEnvVars(): { drupal: string[]; stripe: string[] } {
   const drupal: string[] = []

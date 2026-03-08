@@ -8,6 +8,7 @@ import { GET_POST_BY_SLUG as GET_NODE_BY_PATH } from '@/lib/queries'
 import { getServerApolloClient } from '@/lib/apollo-client'
 
 export const revalidate = 300
+export const dynamic = 'force-dynamic'
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string[] }> }): Promise<Metadata> {
   const resolvedParams = await params
