@@ -1,4 +1,5 @@
-import { gql } from '@apollo/client'
+// Tagged template that returns the query string
+const gql = (strings: TemplateStringsArray, ...values: any[]) => strings.reduce((a, s, i) => a + s + (values[i] || ''), '')
 
 export const GET_ALL_POSTS = gql`
   query GetAllPosts {

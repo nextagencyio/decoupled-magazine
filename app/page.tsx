@@ -1,5 +1,4 @@
-import { headers } from 'next/headers'
-import { getServerApolloClient } from '@/lib/apollo-client'
+import { getClient } from '@/lib/drupal-client'
 import { GET_ALL_POSTS, transformPost } from '@/lib/queries'
 import { PostCard } from './components/PostCard'
 import { SetupGuide } from './components/SetupGuide'
@@ -47,8 +46,7 @@ export default async function HomePage() {
       return <AlmostThere missingStripeVars={missing.stripe} />
     }
 
-    const requestHeaders = await headers()
-    const client = getServerApolloClient(requestHeaders)
+    const client = getClient()
 
     try {
       const { data } = await client.query({

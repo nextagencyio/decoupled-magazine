@@ -1,11 +1,9 @@
+import { getClient } from '@/lib/drupal-client'
 import Header from '../components/Header'
 import ErrorBoundary from '../components/ErrorBoundary'
 import HomepageRenderer from '../components/HomepageRenderer'
 import ResponsiveImage from '../components/ResponsiveImage'
-import { headers } from 'next/headers'
 import { Metadata } from 'next'
-import { GET_POST_BY_SLUG as GET_NODE_BY_PATH } from '@/lib/queries'
-import { getServerApolloClient } from '@/lib/apollo-client'
 
 export const revalidate = 300
 export const dynamic = 'force-dynamic'
@@ -14,9 +12,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const resolvedParams = await params
   const path = `/${(resolvedParams.slug || []).join('/')}`
   try {
-    const apollo = getServerApolloClient(await headers())
-    const { data } = await apollo.query({ query: GET_NODE_BY_PATH, variables: { path } })
-    const title = data?.route?.entity?.title || 'Page'
+    const client = getClient()
+    const page = await client.getEntryByPath(path)
+    const title = (page as any)?.title || 'Page'
     return { title }
   } catch {
     return { title: 'Page' }
@@ -38,12 +36,10 @@ function PageNotFound({ path }: { path: string }) {
 export default async function GenericPage({ params }: { params: Promise<{ slug: string[] }> }) {
   const resolvedParams = await params
   const path = `/${(resolvedParams.slug || []).join('/')}`
-  const apollo = getServerApolloClient(await headers())
+  const client = getClient()
 
   try {
-    const { data } = await apollo.query({ query: GET_NODE_BY_PATH, variables: { path }, fetchPolicy: 'no-cache' })
-    const entity = data?.route?.entity
-
+    const entity = await client.getEntryByPath(path) as any
     if (!entity) {
       return (
         <div className="min-h-screen bg-gray-50">
