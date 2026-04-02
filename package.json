@@ -12,11 +12,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "setup": "tsx scripts/setup.ts",
+    "setup": "npx decoupled-cli@latest setup --content data/magazine-content.json",
     "setup-content": "npx decoupled-cli@latest content import --file data/magazine-content.json",
-    "setup-content:preview": "npx decoupled-cli@latest content import --file data/subscription-content.json --preview",
+    "setup-content:preview": "npx decoupled-cli@latest content import --file data/magazine-content.json --preview",
     "stripe:listen": "stripe listen --forward-to localhost:3000/api/webhooks/stripe",
-    "build:cloudflare": "opennextjs-cloudflare build"
+    "build:cloudflare": "opennextjs-cloudflare build",
+    "sync-schema": "npx decoupled-cli@latest schema sync"
   },
   "dependencies": {
     "@apollo/client": "^3.13.9",
