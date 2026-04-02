@@ -37,7 +37,7 @@ function createMockTypedClient(): TypedClient {
       return result?.data?.route?.entity || null
     },
     async raw(query, variables) {
-      return handleMockQuery(JSON.stringify({ query: typeof query === 'string' ? query : '', variables }))
+      const result = handleMockQuery(JSON.stringify({ query: typeof query === 'string' ? query : '', variables })); return result?.data ?? result
     },
   } as TypedClient
 
