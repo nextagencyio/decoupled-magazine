@@ -24,10 +24,6 @@ export const GET_ALL_POSTS = gql`
           height
         }
         authorName
-        authorAvatar {
-          url
-          alt
-        }
       }
     }
   }
@@ -58,10 +54,6 @@ export const GET_POST_BY_SLUG = gql`
               height
             }
             authorName
-            authorAvatar {
-              url
-              alt
-            }
           }
         }
       }
@@ -91,10 +83,6 @@ export const GET_FEATURED_POSTS = gql`
           height
         }
         authorName
-        authorAvatar {
-          url
-          alt
-        }
       }
     }
   }
@@ -104,7 +92,7 @@ export const GET_FEATURED_POSTS = gql`
 export function transformPost(node: any): import('./types').Post | null {
   if (!node) return null
 
-  const slug = node.path?.replace(/^\/posts\//, '') || node.id
+  const slug = node.path?.replace(/^\//, '') || node.id
 
   // Handle the excerpt - use summary if available, otherwise take first paragraph of body
   let excerpt = node.body?.summary || ''
@@ -133,10 +121,6 @@ export function transformPost(node: any): import('./types').Post | null {
     } : undefined,
     author: {
       name: node.authorName || 'Meridian Editorial',
-      avatar: node.authorAvatar ? {
-        url: node.authorAvatar.url,
-        alt: node.authorAvatar.alt || node.authorName,
-      } : undefined,
     },
   }
 }

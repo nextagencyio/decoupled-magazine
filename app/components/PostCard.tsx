@@ -20,7 +20,7 @@ export function PostCard({ post, featured = false }: PostCardProps) {
   if (featured) {
     return (
       <Link
-        href={`/posts/${post.slug}`}
+        href={`/${post.slug}`}
         className="group block bg-gray-800/50 rounded-2xl overflow-hidden border border-gray-700 hover:border-primary-500/50 transition-all hover:shadow-xl hover:shadow-primary-500/10"
       >
         <div className="grid md:grid-cols-2 gap-6">
@@ -87,7 +87,7 @@ export function PostCard({ post, featured = false }: PostCardProps) {
 
   return (
     <Link
-      href={`/posts/${post.slug}`}
+      href={`/${post.slug}`}
       className="group block bg-gray-800/50 rounded-xl overflow-hidden border border-gray-700 hover:border-primary-500/50 transition-all hover:shadow-lg hover:shadow-primary-500/10"
     >
       <div className="relative aspect-video">

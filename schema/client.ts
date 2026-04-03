@@ -34,7 +34,13 @@ export function createTypedClient(client: DecoupledClient): TypedClient {
         query ($path: String!) {
           route(path: $path) {
             ... on RouteInternal {
-              entity { ... on NodePage { __typename id title path body { processed } } }
+              entity {
+                ... on NodePage { __typename id title path body { processed } }
+                ... on NodeArticle { __typename id title path body { processed summary } image { url alt width height } authorName readTime featured isPremium created { time } }
+                ... on NodeColumn { __typename id title path body { processed summary } image { url alt width height } readTime isPremium created { time } }
+                ... on NodeContributor { __typename id title path }
+                ... on NodeHomepage { __typename id title path }
+              }
             }
           }
         }

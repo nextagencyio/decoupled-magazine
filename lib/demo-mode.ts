@@ -73,7 +73,7 @@ export function getMockPosts(): any[] {
   const nodes = articlesData?.data?.nodeArticles?.nodes || []
 
   return nodes.map((node: any) => {
-    const slug = node.path?.replace(/^\/articles\//, '') || node.id
+    const slug = node.path?.replace(/^\//, '') || node.id
     const publishedAt = node.created?.time
       || (node.publishDate?.timestamp
         ? new Date(node.publishDate.timestamp * 1000).toISOString()
@@ -97,10 +97,6 @@ export function getMockPosts(): any[] {
       } : undefined,
       author: {
         name: node.authorName || 'Meridian Editorial',
-        avatar: node.authorAvatar ? {
-          url: node.authorAvatar.url,
-          alt: node.authorAvatar.alt || node.authorName,
-        } : undefined,
       },
     }
   })

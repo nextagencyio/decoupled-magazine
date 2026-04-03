@@ -49,9 +49,7 @@ export default async function HomePage() {
     const client = getClient()
 
     try {
-      const { data } = await client.query({
-        query: GET_ALL_POSTS,
-      })
+      const data = await client.raw(GET_ALL_POSTS)
 
       posts = (data?.nodeArticles?.nodes || [])
         .map(transformPost)
@@ -103,7 +101,7 @@ export default async function HomePage() {
                   {leadPost.readTime}
                 </span>
               </div>
-              <Link href={`/posts/${leadPost.slug}`} className="group">
+              <Link href={`/${leadPost.slug}`} className="group">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-5 leading-tight group-hover:text-primary-300 transition-colors">
                   {leadPost.title}
                 </h1>
@@ -128,7 +126,7 @@ export default async function HomePage() {
                   </div>
                 )}
                 <Link
-                  href={`/posts/${leadPost.slug}`}
+                  href={`/${leadPost.slug}`}
                   className="ml-auto inline-flex items-center gap-2 text-primary-400 hover:text-primary-300 font-medium transition-colors"
                 >
                   Read Article
@@ -172,7 +170,7 @@ export default async function HomePage() {
 
             {/* Secondary featured article */}
             {secondaryFeatured && (
-              <Link href={`/posts/${secondaryFeatured.slug}`} className="group py-10 md:pl-10 flex gap-5">
+              <Link href={`/${secondaryFeatured.slug}`} className="group py-10 md:pl-10 flex gap-5">
                 {secondaryFeatured.image && (
                   <div className="relative w-32 h-32 flex-shrink-0 rounded-lg overflow-hidden">
                     <Image
